@@ -89,5 +89,80 @@ body {
   .jumbotron {
     border-bottom: 0;
   }
+
+/* flicker Styll pen */
+  *,  *:before, *:after {
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background: #eee;
+}
+
+a,
+a:visited, 
+a:focus {
+  text-decoration: inherit;
+	font-weight: inherit;
+	color: inherit;
+}
+
+.flickr-image {
+  width: 24%;
+  margin: 1% 0.5%;
+  height: 100px;
+  display: inline-block;
+  background-position:center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom:-5px;
+  cursor:pointer;
+  position: relative;
+}
+
+
+header:after {
+  content: '';
+  display: block;
+  border-top: 3px solid #3a3a3a;
+  background: transparent;
+  color: transparent;
+  width: 80px;
+  margin: -30px auto;
+}
+
+.flickr-image:hover {
+  filter: none;
+  -webkit-filter: none;
+}
+
+.flickr-image:hover {
+  -webkit-filter: none;
+}
+
+header {
+  height: 200px;
+  color: #3a3a3a;
+  line-height: 200px;
+  text-align: center;
+
+}
+
+header h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 7vw;
+  text-transform: uppercase;
+}
+
+.big {
+  width: 100%;
+  margin: 1% 0;
+  height: 150px;
+}
 }
 
